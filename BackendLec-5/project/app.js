@@ -79,6 +79,14 @@ app.get("/comments/:idd", (req,res)=>{
 })
 
 //task 5 -> show form to edit the comment
+app.get("/comments/:idd/edit",(req,res) => {
+    let {idd} = req.params;
+    let foundComment=commentsArray.find(
+        (everyComment)=> parseInt(idd)==everyComment.id
+    );
+
+    res.render("edit",)
+})
 
 app.listen(8080,function() {
     console.log("server connected at port 8080")
