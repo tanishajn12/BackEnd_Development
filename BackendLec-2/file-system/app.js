@@ -1,9 +1,9 @@
-const fs = require('fs');
+const fs = require('fs'); //gives an object
 // console.log(fs);
 
-// let data =" hi my name is tanisha am doing web development"
+let data =" hi my name is tanisha am doing web development"
 
-// //create 
+//create 
 // fs.writeFile('abc.txt',data, {} , function(){})
 
 // fs.writeFile("abc.txt" , data ,
@@ -21,7 +21,7 @@ const fs = require('fs');
 //     }
 // );
 
-//read -> way 1
+// read -> way 1
 // fs.readFile("abc.txt",{
 //     encoding : "utf-8" //default value of encoding -> null
 //     },
@@ -48,22 +48,22 @@ const fs = require('fs');
 //     }
 // );
 
-// //update 
-// let appendData= "data structures and algo";
+//update 
+let appendData= "data structures and algo";
 
 
-// fs.appendFile("abc.txt",appendData, {}, 
-//     function(err){
-//         if (err) {
-//             throw err;
-//         }
+fs.appendFile("abc.txt",appendData, {}, 
+    function(err){
+        if (err) {
+            throw err;
+        }
 
-//         console.log("data appended");
-//     }
-// );
+        console.log("data appended");
+    }
+);
 
 
-//delete
+delete
 
 fs.unlink("abc.txt", 
     function(err){
