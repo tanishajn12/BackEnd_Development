@@ -1,5 +1,6 @@
-console.log(process.argv);
+// console.log(process.argv);
 // let arr=process.argv.slice(2);
+
 
 // for(let item of arr){
 //     console.log(`hello ${item}`);
@@ -48,38 +49,47 @@ console.log(process.argv);
 
 
 // way 3
-let cnt_3=1;
-let cnt_5=1;
-for(let i=1; i<=num; i++) {
-    let str ="";
+// let cnt_3=1;
+// let cnt_5=1;
+// for(let i=1; i<=num; i++) {
+//     let str ="";
 
-    if(cnt_3 == 3) {
-        str+="fizz";
-        cnt_3=0;
-    }
+//     if(cnt_3 == 3) {
+//         str+="fizz";
+//         cnt_3=0;
+//     }
 
-    if(cnt_5 == 5) {
-        str+="buzz";
-        cnt_5=0;
-    }
+//     if(cnt_5 == 5) {
+//         str+="buzz";
+//         cnt_5=0;
+//     }
 
-    if(str=""){
-        str+=i;
-    }
+//     if(str=""){
+//         str+=i;
+//     }
 
-    cnt_3++;
-    cnt_5++;
-    console.log(str);
+//     cnt_3++;
+//     cnt_5++;
+//     console.log(str);
    
+// }
+
+
+
+
+
+
+
+
+
+// ------------------------------
+
+let arr=process.argv.slice(2);
+let num = arr.pop();
+
+for(let i=1; i<=num; i++) {
+    console.log(i);
 }
-
-
-
-
-
-
-
-
 
 
 
