@@ -1,16 +1,15 @@
-const express = require('express'); //fn
-// console.log(express);
-let app = express();
-// console.log(app);
+const express = require('express'); //function
+let app = express(); //call function - return?
+//returns -> application object
 
 //express -> creates application 
 //app-> entire instance of your application
 
-app.use(function(req,res){
-    console.log(req,"req");
-    console.log(res,"res");
-    res.send("request from middleware arrived")
-})
+// app.use(function(req,res){
+//     console.log(req,"req");
+//     console.log(res,"res");
+//     res.send("request from middleware arrived")
+// })
 
 
 // app.listen(PORT, function(){})
